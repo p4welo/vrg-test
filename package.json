@@ -1,0 +1,18 @@
+{
+  "name": "vrg-test",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p4welo/vrg-test.git"
+  },
+  "author": "Pawel Radomski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p4welo/vrg-test/issues"
+  },
+  "homepage": "https://github.com/p4welo/vrg-test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.0.0"
+  }
+}
