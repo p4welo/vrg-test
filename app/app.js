@@ -13,15 +13,15 @@
 
     function showSpinner() {
         $('.spinner-wrapper')
-            .removeClass("slideOutDown")
-            .addClass("slideInUp");
+            .removeClass("hideDown")
+            .addClass("showUp");
 
     }
 
     function hideSpinner() {
         $('.spinner-wrapper')
-            .removeClass("slideInUp")
-            .addClass("slideOutDown");
+            .removeClass("showUp")
+            .addClass("hideDown");
     }
 
     function loadData(dataUrl) {

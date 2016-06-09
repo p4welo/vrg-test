@@ -34,8 +34,13 @@ body {
 	width: 6px;
 	display: inline-block;
 
-	-webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
-	animation: sk-stretchdelay 1.2s infinite ease-in-out;
+	-webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+	animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner > p {
+	color: white;
+	margin-top: 10px;
 }
 
 .spinner .rect2 {
@@ -65,7 +70,7 @@ body {
 	animation-fill-mode: both
 }
 
-@-webkit-keyframes sk-stretchdelay {
+@-webkit-keyframes stretchdelay {
 	0%, 40%, 100% {
 		-webkit-transform: scaleY(0.4)
 	}
@@ -74,7 +79,7 @@ body {
 	}
 }
 
-@keyframes sk-stretchdelay {
+@keyframes stretchdelay {
 	0%, 40%, 100% {
 		transform: scaleY(0.4);
 		-webkit-transform: scaleY(0.4);
@@ -85,7 +90,7 @@ body {
 	}
 }
 
-@-webkit-keyframes slideOutDown {
+@-webkit-keyframes hideDown {
 	0% {
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0)
@@ -98,7 +103,7 @@ body {
 	}
 }
 
-@keyframes slideOutDown {
+@keyframes hideDown {
 	0% {
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0)
@@ -111,12 +116,12 @@ body {
 	}
 }
 
-.slideOutDown {
-	-webkit-animation-name: slideOutDown;
-	animation-name: slideOutDown
+.hideDown {
+	-webkit-animation-name: hideDown;
+	animation-name: hideDown
 }
 
-@-webkit-keyframes slideInUp {
+@-webkit-keyframes showUp {
 	0% {
 		-webkit-transform: translate3d(0, 100%, 0);
 		transform: translate3d(0, 100%, 0);
@@ -129,7 +134,7 @@ body {
 	}
 }
 
-@keyframes slideInUp {
+@keyframes showUp {
 	0% {
 		-webkit-transform: translate3d(0, 100%, 0);
 		transform: translate3d(0, 100%, 0);
@@ -142,9 +147,9 @@ body {
 	}
 }
 
-.slideInUp {
-	-webkit-animation-name: slideInUp;
-	animation-name: slideInUp
+.showUp {
+	-webkit-animation-name: showUp;
+	animation-name: showUp
 }
 
 .panel {
