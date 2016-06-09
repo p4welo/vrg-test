@@ -1,0 +1,1 @@
+In order to run project you need to ```npm install``` and then ```gulp```
