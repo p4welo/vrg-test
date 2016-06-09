@@ -4,7 +4,7 @@
             {{#items}}
             <li class="media">
                 <div class="media-left media-middle text-center">
-                    <img src="https://api.adorable.io/avatars/48/{{userId}}.png" class="img-circle" alt="">
+                    <img src="https://api.adorable.io/avatars/48/{{userId}}.png" class="img-circle" alt="avatar">
                     <span class="text-muted">User {{userId}}</span>
                 </div>
 
