@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Post list</title>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">-->
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="spinner-wrapper animated">
+	<div class="spinner">
+		<div class="rect1"></div>
+		<div class="rect2"></div>
+		<div class="rect3"></div>
+		<div class="rect4"></div>
+		<div class="rect5"></div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="col-sm-6">
+		<legend>All posts</legend>
+		<div id="post-list-content"></div>
+	</div>
+	<div class="col-sm-6">
+		<legend>Grouped by user</legend>
+		<div id="user-accordions-content"></div>
+	</div>
+</div>
+</body>
+<script src="app/app.js"></script>
+<script src="app/postList.js"></script>
+</html>
