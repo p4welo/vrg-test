@@ -4,13 +4,13 @@
     $.when(
         Application.load.data('http://jsonplaceholder.typicode.com/posts'),
         Application.load.template('templates/postList.tpl'),
-        Application.load.template('templates/userAccordions.tpl')
+        Application.load.template('templates/postAccordion.tpl')
     ).then(renderTemplates);
 
-    function renderTemplates(postData, postListTpl, accordionsTpl) {
+    function renderTemplates(postData, postListTpl, accordionTpl) {
         var posts = postData[0] || [];
         renderList(posts, postListTpl[0]);
-        renderAccordions(posts, accordionsTpl[0]);
+        renderAccordion(posts, accordionTpl[0]);
 
         Application.spinner.hide();
 
@@ -21,7 +21,7 @@
             $('#post-list-content').html(renderedPostList);
         }
 
-        function renderAccordions(items, template) {
+        function renderAccordion(items, template) {
             var groupedPosts = _.groupBy(items, 'userId');
             var users = Object
                 .keys(groupedPosts)
@@ -31,11 +31,11 @@
                         posts: groupedPosts[id]
                     }
                 });
-            var renderedAccordions = mustache.render(template, {
+            var renderedAccordion = mustache.render(template, {
                 users: users
             });
 
-            $('#user-accordions-content').html(renderedAccordions);
+            $('#post-accordion-content').html(renderedAccordion);
             attachAccordionEvents();
 
             function attachAccordionEvents() {

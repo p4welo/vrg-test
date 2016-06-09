@@ -41,6 +41,7 @@ body {
 .spinner > p {
 	color: white;
 	margin-top: 10px;
+	font-size: 13px;
 }
 
 .spinner .rect2 {
