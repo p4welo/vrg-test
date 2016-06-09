@@ -1,24 +1,3 @@
-<!--<table class="table table-borderless table-striped">
-    <tbody>
-    {{#items}}
-    <tr>
-        <td class="text-center">User {{userId}}</td>
-        <td>
-            <em>{{title}}</em>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img class="media-object img-circle" src="https://api.adorable.io/avatars/48/{{userId}}.png" alt="avatar">
-        </td>
-        <td>
-            {{body}}
-        </td>
-    </tr>
-    {{/items}}
-    </tbody>
-</table>-->
-
 <div class="panel panel-default panel-posts">
     <div class="panel-body">
         <ul class="media-list">
