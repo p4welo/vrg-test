@@ -12,7 +12,6 @@
                     <div class="media-heading">{{title}}</div>
                     <span class="text-muted">{{body}}</span>
                 </div>
-
             </li>
             {{/items}}
         </ul>
